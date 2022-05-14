@@ -1,16 +1,83 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container-card {
+  background-color: #074E87;
+  background-image: url("../public/poke-bola.jpg");
+  background-position: center;
 }
 
-* {
-  box-sizing: border-box;
+.li-index {
+  width: 100px;
+  margin: 20px;
 }
+
+.ul-index {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+.h1-index {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+}
+
+.a-index {
+  color: white;
+}
+
+.h1-poke {
+  padding: 20px;
+  color: azure;
+}
+
+.div-poke {
+  /*padding: 20px;*/
+  color: azure;
+  text-align: center;
+}
+
+.container-card {
+  text-align: center;
+  padding: 30px 0 410px 0;
+}
+
+.poke {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.p-poke {
+  padding: 90px;
+}
+
+.myButton {
+  box-shadow: 0 10px 14px -7px #276873;
+  background: #599bb3 linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family: Arial, serif;
+  font-size:20px;
+  font-weight:bold;
+  padding:13px 32px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+  background: #408c99 linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
